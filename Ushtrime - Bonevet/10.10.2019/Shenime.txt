@@ -1,0 +1,5 @@
+x,y,z - numra
+
+me fill prej nje numri (x)
+me fill prej nje numri deri ne numrin tjt (x,y)
+me fill prej nje numri deri ne numrin tjt dhe per sa her deshironi qe aj numer te kalohet(x,y,z)

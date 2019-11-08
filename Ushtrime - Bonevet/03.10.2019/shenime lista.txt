@@ -1,0 +1,6 @@
+lista gjithmon me []
+tek lista anetaret numerohen prej 0 ose me .index
+Variabla.append me shtu anetar
+variabla.remove me hek anetar
+len - mi numru karakteret
+

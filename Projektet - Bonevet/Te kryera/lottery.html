@@ -1,0 +1,95 @@
+<script>
+	var firstGuess;
+	var secondGuess;
+	var thirdGuess;
+	var correct = 0;
+	var moneyAmount = 0;
+	var firstToFirst = false;
+	var secondToFirst = false;
+	var thirdToFirst = false;
+	var firstToSecond = false;
+	var secondToSecond = false;
+	var thirdToSecond = false;
+	var firstToThird = false;
+	var secondToThird = false;
+	var thirdToThird = false;
+
+	var firstRandomNumber = Math.floor((Math.random() * 10) + 1);
+		console.log(firstRandomNumber);
+	var secondRandomNumber = Math.floor((Math.random() * 10) + 1);
+		console.log(secondRandomNumber);
+	var thirdRandomNumber = Math.floor((Math.random() * 10) + 1);
+		console.log(thirdRandomNumber);
+
+	firstGuess = parseInt(prompt("Guess a number between 1 and 10!"));
+	secondGuess = parseInt(prompt("Guess a number between 1 and 10 for the second time!"));
+	thirdGuess = parseInt(prompt("Guess a number between 1 and 10 for the third time!"));
+
+	if (firstRandomNumber == firstGuess)
+	{
+		firstToFirst = true;
+		correct = correct + 1;
+	}
+	else if (firstToFirst == false && firstRandomNumber == secondGuess)
+	{
+		secondToFirst = true;
+		correct = correct + 1;
+	}
+	else if (firstToFirst == false && secondToFirst == false && firstRandomNumber == thirdGuess)
+	{
+		thirdToFirst = true;
+		correct = correct + 1;
+	}
+	
+
+	if (firstToFirst == false && secondRandomNumber == firstGuess)
+	{
+		firstToSecond = true;
+		correct = correct + 1;
+	}
+	else if (firstToSecond == false && secondToFirst == false && secondRandomNumber == secondGuess)
+	{
+		secondToSecond = true;
+		correct = correct + 1;
+	}
+	else if (firstToSecond == false && secondToSecond == false && thirdToFirst == false && secondRandomNumber == thirdGuess)
+	{
+		thirdToSecond = true;
+		correct = correct + 1;
+	}
+	
+	if (firstToFirst == false && firstToSecond == false && thirdRandomNumber == firstGuess)
+	{
+		firstToThird = true;
+		correct = correct + 1;
+	}
+	else if (firstToThird == false && secondToFirst == false && secondToSecond == false && thirdRandomNumber == secondGuess)
+	{
+		secondToThird = true;
+		correct = correct + 1;
+	}
+	else if (firstToThird == false && secondToThird == false && thirdToFirst == false && thirdToSecond == false && thirdRandomNumber == thirdGuess)
+	{
+		thirdToThird = true;
+		correct = correct + 1;
+	}
+
+	if (correct == 1)
+	{
+		moneyAmount = 100;
+	}
+	else if (correct == 2)
+	{
+		moneyAmount = 200;
+	}
+	else if (correct == 3)
+	{
+		moneyAmount = 500;
+	}
+	else 
+	{
+		moneyAmount = 0
+	}
+
+	alert ("The computer's numbers are " + firstRandomNumber + " " + secondRandomNumber + " " +thirdRandomNumber + "\nYour guesses were " + firstGuess + " " + secondGuess + " " +thirdGuess + "\nYou got " + correct + " right" + "\nYou've won $" + moneyAmount);
+</script>

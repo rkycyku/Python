@@ -1,0 +1,2 @@
+String Int Float - Variablat
+type - me deklaru qfar variable

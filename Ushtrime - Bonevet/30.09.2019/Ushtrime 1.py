@@ -1,0 +1,6 @@
+emri = input("Si e ke emrin: ")
+emriprindit = input("Emri i prindit: ")
+mbiemri = input("Si e ke mbiemrin: ")
+mosha = input("Sa vjeq je: ")
+qyteti = input("Nga cili qytet jeni: ")
+print(emri, emriprindit, mbiemri, mosha, "vjeq", "nga qyteti i", qyteti)

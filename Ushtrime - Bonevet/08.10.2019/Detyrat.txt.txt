@@ -1,0 +1,26 @@
+Pershendetje te gjitheve,
+
+Ne vazhdim gjeni detyrat te cilat kishte me qene mire te i zgjidhni ne shtepi referojuni ne kete link nese keni per te rikujtuar dicka gjat oreve mesimore: https://www.learnpython.org/
+
+Detyra 1.
+Gjeji numrat ne mes te 95 dhe 105 qe jan te plotpjestueshem
+me 7 por jo me 5. 
+Vendosi ne nje liste ato qe jane dyshifror
+kurse ne nje liste tjeter ato qe jane treshifror.
+Perdoreni funksionin len()
+
+Pak Shpjegim:
+Plotpjestueshmeri: Mbasi pjestohet numri nuk eshte me pik.(float)
+P.sh. 4/2 =2.0 (4 eshte i plotpjestueshem me 2)
+4/3 = 1.3 (4 nuk eshte i plotpjestueshem me 3)
+Ne python shkruhet keshtu: 4%2 
+
+if 4%2 == 0:
+    print("4 eshte i plotpjestueshem me 2")
+
+
+Detyra 5.
+lista = ['popo',1,2,'prepre']
+Program qe e shikon gjatesine (len()) e seciles fjale apo numer
+brenda listes. Nese gjatesia eshte me e madhe se 2 
+ateher ndryshojeni at fjale apo numer me fjalen "Eshte".

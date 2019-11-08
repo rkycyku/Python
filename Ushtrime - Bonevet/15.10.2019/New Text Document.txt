@@ -1,0 +1,17 @@
+Pershendetje, 
+
+Po ju rikujtoj edhe nje here per kete detyren e shtepise qe te tentoni ta zgjidhni:
+
+Detyra 1: Te krijohet nje program aplikimi: Te pyet programi
+"Sa persona do te aplikojne?" Ti e shenon nje numer dhe pastaj aq here te del forma e aplikimit.
+Forma e aplikimit i ka keto pyetje:
+Emri dhe mbiemri
+Mosha
+Gjinia
+Shkolla
+
+Cdo here i vendos ne liste.
+
+Pasi te mbush formen me te gjitha cka duhet,shtoji keto ne nje liste dhe ne fund te programit printoji te gjitha.
+
+Ndihmese: Perdoreni for loop dhe in range().

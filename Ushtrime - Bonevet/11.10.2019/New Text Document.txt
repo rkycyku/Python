@@ -1,0 +1,11 @@
+Pershendetje te gjitheve,
+
+Kjo eshte detyra per te cilen folem ne klase:
+
+Nje program qe i kthen grade Celsius ne Fahrenheit.
+Merr 2 inputa: Sa grade eshte. Dhe se a po don me e kthy
+ne Celsius apo Fahrenheit.
+
+Formula C = (F - 32/9)*5
+ F = (C/5)+ 32/9
+

@@ -1,0 +1,9 @@
+Variablat
+
+shenja e = behet me ==
+vlera me e madhe (>) me e vogel (<) behet njesoj
+gjithmon ne fund te if shkruhet :
+gjithmon elif shkruhet perfuni if dhe kurr nen else
+else gjithmon pa kusht
+and, or jane operator logjik
+gjithmon duhet te deklarohet jasht if 
