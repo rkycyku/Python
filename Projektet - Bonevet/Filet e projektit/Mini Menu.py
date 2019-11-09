@@ -13,8 +13,12 @@ sleep(.5)
 # Ky mesazh sherben per te pershendetur perdoruesin
 print("\nMiresevini", perdoruesi)
 sleep(.5)
-# Keto 
-fillimi_i_menys = input("\nA deshironi te shkoni ne menu? ")
+# Keto variabla sherbejne per te pyetur perdoruesin a deshiron te hapi menun apo jo
+print('\nShkruani "Po" per te hapur menun,')
+sleep(.1)
+print('Shkruani "Jo" per te mbyllur programin.')
+sleep(.1)
+fillimi_i_menys = input("\nA deshironi te hapni menun? ")
 fillimi_i_menys = fillimi_i_menys.lower()
 
 # Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
@@ -23,8 +27,6 @@ while fillimi_i_menys == "jo":
     loja = 0
     programi = 0
     print("\nMire u pafshim", perdoruesi)
-    sleep(.1)
-    print("Faleminderit qe perdoret programin tim")
     break
 
 # Ky funksion sherben per te shfaqur menun
@@ -218,7 +220,11 @@ while fillimi_i_menys == "po":
             
             # Keto funksione sherbejn per tu kthyer ne menu
             loja = 0
-            fillimi_i_menys = input("\nA deshironi te ktheheni mbrapa? ")
+            print('\nShkruani "Po" per tu rikthyer,')
+            sleep(.1)
+            print('Shkruani "Jo" per te mbyllur programin.')
+            sleep(.1)
+            fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
             fillimi_i_menys = fillimi_i_menys.lower()
             
         # Loja e hedhjes se gureve
@@ -242,6 +248,10 @@ while fillimi_i_menys == "po":
             max = 6
 
             # Variabla e Gjuaj Guret
+            print('\nShkruani "Po" per tu gjuajtur guret,')
+            sleep(.1)
+            print('Shkruani "Jo" per te mbyllur lojen.')
+            sleep(.1)
             gjuajguret = input("\nA deshironi te filloni me gjuajtjen e gureve? ")
             gjuajguret = gjuajguret.lower()
 
@@ -295,11 +305,19 @@ while fillimi_i_menys == "po":
                     print("\nRezultati eshte barazim")
                     
                 sleep(1)
+                print('\nShkruani "Po" per tu gjuajtur perseri,')
+                sleep(.1)
+                print('Shkruani "Jo" per te mbyllur lojen.')
+                sleep(.1)
                 gjuajguret = input("\nA deshironi te gjuani perseri? ")
                 gjuajguret = gjuajguret.lower()
                 
             # Keto funksione sherbejn per tu kthyer ne menu
             if gjuajguret == "jo":
+                print('\nShkruani "Po" per tu rikthyer,')
+                sleep(.1)
+                print('Shkruani "Jo" per te mbyllur programin.')
+                sleep(.1)
                 loja = 0
                 fillimi_i_menys = input("\nA deshironi te ktheheni tek menuja? ")
                 fillimi_i_menys = fillimi_i_menys.lower()
@@ -405,7 +423,11 @@ while fillimi_i_menys == "po":
                 i+=1
             # Keto funksione sherbejn per tu kthyer ne menu
             loja = 0
-            fillimi_i_menys = input("\nA deshironi te ktheheni mbrapa? ")
+            print('\nShkruani "Po" per tu rikthyer,')
+            sleep(.1)
+            print('Shkruani "Jo" per te mbyllur programin.')
+            sleep(.1)
+            fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
             fillimi_i_menys = fillimi_i_menys.lower()
         
         # Ky kod sherben per tu kthyer prapa ne menu
@@ -420,7 +442,6 @@ while fillimi_i_menys == "po":
             menuja = 0
             print("\nMire u pafshim", perdoruesi)
             sleep(.1)
-            print("Faleminderit qe perdoret programin tim")   
             break 
     # Menuja e dyte
     while menuja == 2:
@@ -497,7 +518,11 @@ while fillimi_i_menys == "po":
             
             # Keto funksione sherbejn per tu kthyer ne menu
             programi = 0
-            fillimi_i_menys = input("\nA deshironi te ktheheni mbrapa? ")
+            print('\nShkruani "Po" per tu rikthyer,')
+            sleep(.1)
+            print('Shkruani "Jo" per te mbyllur programin.')
+            sleep(.1)
+            fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
             fillimi_i_menys = fillimi_i_menys.lower()
 
         # Perimetri
@@ -535,7 +560,11 @@ while fillimi_i_menys == "po":
             
             # Keto funksione sherbejn per tu kthyer ne menu
             programi = 0
-            fillimi_i_menys = input("\nA deshironi te ktheheni mbrapa? ")
+            print('\nShkruani "Po" per tu rikthyer,')
+            sleep(.1)
+            print('Shkruani "Jo" per te mbyllur programin.')
+            sleep(.1)
+            fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
             fillimi_i_menys = fillimi_i_menys.lower()
         
         # Gjenerimi i Paswordeve
@@ -635,7 +664,11 @@ while fillimi_i_menys == "po":
             
             # Keto funksione sherbejn per tu kthyer ne menu
             programi = 0
-            fillimi_i_menys = input("\nA deshironi te ktheheni mbrapa? ")
+            print('\nShkruani "Po" per tu rikthyer,')
+            sleep(.1)
+            print('Shkruani "Jo" per te mbyllur programin.')
+            sleep(.1)
+            fillimi_i_menys = input("A deshironi te ktheheni mbrapa? ")
             fillimi_i_menys = fillimi_i_menys.lower()
 
         # Ky kod sherben per tu kthyer prapa ne menu
@@ -650,7 +683,6 @@ while fillimi_i_menys == "po":
             menuja = 0
             print("\nMire u pafshim", perdoruesi)
             sleep(.1)
-            print("Faleminderit qe perdoret programin tim")   
             break 
     
 
