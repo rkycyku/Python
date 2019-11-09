@@ -17,6 +17,16 @@ sleep(.5)
 fillimi_i_menys = input("\nA deshironi te shkoni ne menu? ")
 fillimi_i_menys = fillimi_i_menys.lower()
 
+# Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
+while fillimi_i_menys == "jo":
+    menuja = 0
+    loja = 0
+    programi = 0
+    print("\nMire u pafshim", perdoruesi)
+    sleep(.1)
+    print("Faleminderit qe perdoret programin tim")
+    break
+
 # Ky funksion sherben per te shfaqur menun
 while fillimi_i_menys == "po":
     # Mini Menuja per te vendosur cilen nga menut te hapesh
@@ -233,9 +243,10 @@ while fillimi_i_menys == "po":
 
             # Variabla e Gjuaj Guret
             gjuajguret = input("\nA deshironi te filloni me gjuajtjen e gureve? ")
+            gjuajguret = gjuajguret.lower()
 
             # While ne kete rast perdoret per kur Gjuaj Guret eshte Po
-            while gjuajguret == "Po" or gjuajguret == "po" or gjuajguret == "PO":
+            while gjuajguret == "po":
                 # Guri i 1
                 g1 = randint(min,max)
                 # Guri i 2
@@ -285,11 +296,14 @@ while fillimi_i_menys == "po":
                     
                 sleep(1)
                 gjuajguret = input("\nA deshironi te gjuani perseri? ")
+                gjuajguret = gjuajguret.lower()
+                
             # Keto funksione sherbejn per tu kthyer ne menu
-            loja = 0
-            menuja = 0
-            kthimi_ne_meny = input("\nA deshironi te ktheheni tek menuja? ")
-            kthimi_ne_meny = kthimi_ne_meny.lower()
+            if gjuajguret == "jo":
+                loja = 0
+                fillimi_i_menys = input("\nA deshironi te ktheheni tek menuja? ")
+                fillimi_i_menys = fillimi_i_menys.lower()
+        
         # Loja e Gure,Leter & Gershere
         while loja == 3:
             # Grafiku i lojes se Gure,Leter & Gershere
@@ -399,7 +413,15 @@ while fillimi_i_menys == "po":
             loja = 0
             menuja = 0
             fillimi_i_menys == "po"
-
+        
+        # Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
+        while fillimi_i_menys == "jo":
+            loja = 0
+            menuja = 0
+            print("\nMire u pafshim", perdoruesi)
+            sleep(.1)
+            print("Faleminderit qe perdoret programin tim")   
+            break 
     # Menuja e dyte
     while menuja == 2:
         # Menuja e programeve
@@ -621,16 +643,17 @@ while fillimi_i_menys == "po":
             programi = 0
             menuja = 0
             fillimi_i_menys == "po"
-
-# Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
-while fillimi_i_menys == "jo":
-    print("\nMire u pafshim", perdoruesi)
-    sleep(.1)
-    print("Faleminderit qe perdoret programin tim")
-    break
-
-
     
+        # Ky funksion sherben kur perdoruesi nuk deshiron te kthehet ne menu
+        while fillimi_i_menys == "jo":
+            programi = 0
+            menuja = 0
+            print("\nMire u pafshim", perdoruesi)
+            sleep(.1)
+            print("Faleminderit qe perdoret programin tim")   
+            break 
+    
+
 # Keto inpute sherbejn qe kur programi te hapet ne Comand Prompt te Pythonit mos te mbyllet pas perfundimit
 input()
 input()
