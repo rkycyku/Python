@@ -37,11 +37,18 @@ while shakedice == "y":
         sleep(1)
         print("\nI won")
         sleep(1)
-        print("\nI win", str(player) + " to " + str(computer))
+        print("\nI win", str(computer) + " to " + str(player))
         sleep(1)
     elif player == computer:
         sleep(1)
         print("\nTie")
+        
+    if playerpoints > 4:
+        print("\nYou win the game!")
+        break
+    elif computerpoints > 4:
+        print("\nI win the game!")
+        break
     
     if playerpoints > computerpoints:
         sleep(1)
@@ -52,13 +59,6 @@ while shakedice == "y":
     else:
         sleep(1)
         print("\nThe score is tied", str(playerpoints) + " to " + str(computerpoints))
-
-    if playerpoints == 5:
-        print("\nYou win the game!")
-        break
-    elif computerpoints == 5:
-        print("\nI win the game!")
-        break
 
     shakedice = input("\nCountinue? (Y/N) ")
     shakedice = shakedice.lower()
