@@ -7,12 +7,23 @@ print("(2) Delete Task")
 print("(3) Edit Task")
 print("(4) Quit")
 
-a = input("\nWhat do you want to do: ")
+a = int(input("\nWhat do you want to do: "))
 
-lista = {}
-
-if a == 1:
+while a == 1:
+    lista = []
     task = input("Enter a task: ")
-
-print(1)
-print(2)
+    lista.append(task)
+    print(lista)
+    b = input("enter again: ")
+    b = b.lower()
+    
+    while b == "y":
+    	task = input("Enter task: ")
+    	lista.append(task)
+    	print(lista)
+    	b = input("enter again: ")
+    	b = b.lower()
+    	
+    while b == "s":
+    	
+      
