@@ -13,6 +13,3 @@ lista = {}
 
 if a == 1:
     task = input("Enter a task: ")
-
-print(1)
-print(2)
