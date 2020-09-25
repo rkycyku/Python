@@ -5,7 +5,7 @@ b = "Python"
 lista = ["Bonevet", 56, 5.6, b]
 
 lista.append("Kosove")
-lista.append("Dafina")
+lista.append("besa")
 lista.append("Kacanik")
 lista.remove(56)
 
@@ -15,7 +15,7 @@ print(len(lista))
 
 print(lista[0])
 
-print(len("Dafina"))
+print(len("besa"))
 
 print(lista.index(b))
 
